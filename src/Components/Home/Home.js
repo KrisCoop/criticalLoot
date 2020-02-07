@@ -1,5 +1,9 @@
 import React from 'react';
 
+import dice1 from './../../Assets/dice1.png'
+import {link, withRouter} from 'react-router-dom'
+import './Home.css'
+
 const Home = () => {
     return(
         <div className='HomeMain'>
@@ -8,21 +12,30 @@ const Home = () => {
             </div>
 
             <div className='Home Options'>
-                <div className='Home Buttons'>
-                    <img />
-                    <p>Bad Roll</p>
-                </div>
-                <div className='Home Buttons'>
-                    <img />
-                    <p>Good Roll</p>
-                </div>
-                <div className='Home Buttons'>
-                    <img />
-                    <p>Make Your Own Loot</p>
-                </div>
+                <Link to='/BadRoll'>
+                    <div className='Home Buttons'>
+                        <img src={dice1}/>
+                        <p>Bad Roll</p>
+                    </div>
+                </Link>
+                
+                <Link to='/GoodRoll'>
+                    <div className='Home Buttons'>
+                        <img src={dice1}/>
+                        <p>Good Roll</p>
+                    </div>
+                </Link>
+                
+                <Link to='/DIY'>
+                    <div className='Home Buttons'>
+                        <img src={dice1}/>
+                        <p>Make Your Own Loot</p>
+                    </div>
+                </Link>
+                
             </div>
         </div>
     )
 }
 
-export default Home;
+export default withRouter(Home);
