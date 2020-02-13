@@ -1,7 +1,7 @@
 import React from 'react';
 
 import dice1 from './../../Assets/dice1.png'
-import {link, withRouter} from 'react-router-dom'
+import {Link, withRouter} from 'react-router-dom'
 import './Home.css'
 
 const Home = () => {
@@ -13,23 +13,23 @@ const Home = () => {
 
             <div className='Home Options'>
                 <Link to='/BadRoll'>
-                    <div className='Home Buttons'>
+                    <div className='HomeButtons'>
                         <img src={dice1}/>
-                        <p>Bad Roll</p>
+                        <h1>Bad Roll</h1>
                     </div>
                 </Link>
                 
                 <Link to='/GoodRoll'>
-                    <div className='Home Buttons'>
+                    <div className='HomeButtons'>
                         <img src={dice1}/>
-                        <p>Good Roll</p>
+                        <h1>Good Roll</h1>
                     </div>
                 </Link>
                 
                 <Link to='/DIY'>
-                    <div className='Home Buttons'>
+                    <div className='HomeButtons'>
                         <img src={dice1}/>
-                        <p>Make Your Own Loot</p>
+                        <h1>Make Your Own Loot</h1>
                     </div>
                 </Link>
                 

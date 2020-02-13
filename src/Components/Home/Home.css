@@ -1,2 +1,21 @@
+.HomeMain {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
+}
+
+.HomeButtons img{
+    /* width: 30vw */
+    width: 20vh
+}
+
+.HomeButtons h1 {
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+}
 

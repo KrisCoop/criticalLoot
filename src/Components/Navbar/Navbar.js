@@ -3,14 +3,17 @@ import {Link, withRouter} from 'react-router-dom';
 
 
 const Navbar = () => {
-    <div>
+    return(
+
+        <div>
         <ul>
-            <Link to='/'><li>Home</li></Link>
-            <Link to='/BadRoll'><li>BadRoll</li></Link>
-            <Link to='/GoodRoll'><li>GoodRoll</li></Link>
-            <Link to='/DIY'><li>DIY</li></Link>
+            <li><Link to='/'>Home</Link></li>
+            <li><Link to='/BadRoll'>BadRoll</Link></li>
+            <li><Link to='/GoodRoll'>GoodRoll</Link></li>
+            <li><Link to='/DIY'>DIY</Link></li>
         </ul>
     </div>
+    )
 }
 
 export default withRouter(Navbar);
