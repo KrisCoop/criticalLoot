@@ -1,5 +1,5 @@
 const express = require('express');
-const cors = reure('cors');
+const cors = require('cors');
 const bodyParser = require('body-parser');
 const massive = require('massive');
 const controller = require('./controller');
